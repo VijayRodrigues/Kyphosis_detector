@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"  href="{{ url_for('static', filename='style_1.css')}}">
+        </head>
+    <body>
+        
+        <form method="POST", action="{{url_for('home')}}">
+            <center>
+            <div class="form">
+                <div class="title">Kyphosis Disease Detection</div>
+                <div class="input-container ic1">
+                    <input type="text", name="a", class="input" placeholder=" "/>
+                <div class="cut"></div>
+                <label for="Age in months" class="placeholder">Age in months</label>
+                </div>
+                <div class="input-container ic2">
+                    <input type="text", name="b", class="input", placeholder=" "/>
+                <div class="cut"></div>
+                <label for="Number of vertebraes" class="placeholder">Number of vertebraes</label>
+                </div>
+                <div class="input-container ic2">
+                    <input type="text", name="c", class="input", placeholder=" "/>
+                <div class="cut cut-short"></div>
+                <label for="Vertebrae operated on..." class="placeholder">Vertebrae operated on</>
+                </div>
+                <input type="submit", value="predict", class="submit">
+            </div>
+            </center>
+        </form>
+    </body>
+</html>

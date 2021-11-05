@@ -1,0 +1,122 @@
+body {
+    align-items: center;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .form {
+    background: linear-gradient(to bottom, #aeca4a 59%, #ff4800 93%);
+    border-radius: 20px;
+    box-shadow: 10px 10px 8px #888888;
+    box-sizing: border-box;
+    height: 550px;
+    padding: 20px;
+    width: 550px;
+  }
+  
+  .title {
+    color: rgb(226, 95, 7);
+    font-family: Impact, fantasy;
+    font-size: 45px;
+    font-weight: 800px;
+    margin-top: 35px;
+    text-shadow: 8px 8px 8px #f1eaea;
+  }
+  
+  .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+    left: 125px;
+  }
+  
+  .ic2 {
+    margin-top: 40px;
+    left: 125px;
+  }
+  
+  .input {
+    background-color: #c2c2c2;
+    border-radius: 12px;
+    border: 5;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 150px;
+  }
+
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #0e0e0f;
+    font-family: OCR A Std, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    left: -80px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #111113;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #131111;
+  }
+  
+  .submit {
+    background-color: rgb(245, 245, 252);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: rgb(18, 5, 199);
+    cursor: pointer;
+    font-size: 25px;
+    height: 50px;
+    font-weight: bold;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 30%;
+  }
+  
+  .submit:active {
+    background-color: rgb(83, 80, 255);
+  }
+  
+  .submit:hover
+    {
+      background-color: rgb(18, 5, 199);
+      color: rgb(245, 245, 252);
+    }   
